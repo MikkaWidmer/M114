@@ -23,6 +23,7 @@ HEX-Editor (https://hexed.it)
 ### Zahlensysteme, numerische Codes
 
 2. Wandeln sie die folgende Dezimalzahl ohne Taschenrechner in die entsprechende Binärzahl um: 911
+
     911 ÷ 2 = 455 Rest 1
     
     455 ÷ 2 = 227 Rest 1
@@ -46,6 +47,7 @@ HEX-Editor (https://hexed.it)
     Die Binärzahl für 911 lautet also 1110001111.
     
 3. Wandeln sie die folgende Binärzahl ohne Taschenrechner in die entsprechende Dezimalzahl um: 1011'0110 
+
    128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
    
     1     0    1    1   0   1   1   0
@@ -53,6 +55,7 @@ HEX-Editor (https://hexed.it)
     128 + 32 + 16 + 4 + 2 = 182
     
 4. Wandeln sie die folgende Binärzahl ohne Taschenrechner in die entsprechende Hexadezimalzahl um: 1110'0010'1010'0101
+
     1110 -> E
     
     0010 -> 2
@@ -64,6 +67,7 @@ HEX-Editor (https://hexed.it)
     Die Binärzahl 1110'0010'1010'0101 entspricht der Hexadezimalzahl E2A5.
     
 5. Der Addierer einer ALU erhält für Zahl-A: 1101'1001 und für Zahl-B: 0111'0101. Was wird man als Resultat erhalten? Erklären sie!
+
        1101'1001
        
     + 0111'0101

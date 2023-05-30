@@ -93,3 +93,5 @@ HEX-Editor (https://hexed.it)
 Alphanumerische Codes ASCII, Unicode
 
 ## Tag-2
+
+Der Schultag heute war sehr lehrreich. Wir haben uns mit Codes wie ASCII und Unicode beschäftigt. Wir haben den ASCII-Code und seine Erweiterung nach ISO 8859 kennengelernt. Außerdem haben wir darüber gesprochen, warum Unicode wichtig ist, um mehr Zeichen darstellen zu können. Wir haben praktische Aufgaben gemacht, um die Unterschiede zwischen ASCII und UTF-8 zu erkunden. Wir haben auch gelernt, was Big-Endian und Little-Endian bedeuten. Insgesamt war der Schultag sehr informativ und hat mein Verständnis für diese Codes erweitert.

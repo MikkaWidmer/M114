@@ -102,77 +102,79 @@ Der Schultag heute war sehr lehrreich. Wir haben uns mit Codes wie ASCII und Uni
 
 Bildcodierung
 
-    Elektromagnetische Wellen werden mit der Wellenlänge oder der Frequenz angegeben.
-    Licht besteht aus elektromagnetischen Wellen.
-    Nur ein Teil der Frequenzen des Lichts sind für das menschliche Auge sichtbar.
+	Elektromagnetische Wellen können durch ihre Wellenlänge oder Frequenz beschrieben werden.
+	Licht besteht aus elektromagnetischen Wellen.
+	Nur bestimmte Frequenzen des Lichts sind für das menschliche Auge sichtbar.
 
-Farben können in verschiedenen codeformaten dargestellt werden(bsp: HEX: weiss = #ffffff)
+Farben können in verschiedenen Codeformaten dargestellt werden, zum Beispiel in HEX-Codes, wie z.B. weiß = #ffffff.
 
-Es gibt verschiedene Farbkanäle, die einen können nur schwarz und weiss darstellen, andere können natürlich auch farbig.
+Es gibt verschiedene Farbkanäle, manche können nur Schwarz und Weiß darstellen, während andere natürlich auch Farben anzeigen können.
 
-dpi = Dots per Inch ppi = Pixel per Inch --> gut zu wissen beim kaufen eines Bildschirmes.
+DPI (Dots per Inch) und PPI (Pixels per Inch) sind Begriffe, die wichtig sind, um die Bildqualität eines Bildschirms beim Kauf zu berücksichtigen.
 
 ### 2. Farbcodierung RGB / CMYK
 
-RGB 255/255/255 ergibt in YCbCr:
-Die Umwandlung von RGB 255/255/255 in YCbCr ergibt Y: 1, Cb: 0, Cr: 0.
+	RGB 255/255/255 ergibt in YCbCr:
+	Die Umwandlung von RGB 255/255/255 in YCbCr ergibt Y: 1, Cb: 0, Cr: 0.
 
-RGB 0/0/0 ergibt in YCbCr:
-Die Umwandlung von RGB 0/0/0 in YCbCr ergibt Y: 0, Cb: 0, Cr: 0.
+	RGB 0/0/0 ergibt in YCbCr:
+	Die Umwandlung von RGB 0/0/0 in YCbCr ergibt Y: 0, Cb: 0, Cr: 0.
 
-Y: 1, Cb: 0, Cr: 0 entspricht der Farbe:
-Y: 1, Cb: 0, Cr: 0 repräsentiert die Farbe Schwarz.
+	Y: 1, Cb: 0, Cr: 0 entspricht der Farbe:
+	Y: 1, Cb: 0, Cr: 0 repräsentiert die Farbe Schwarz.
 
-Y: 0, Cb: 0, Cr: 0 entspricht der Farbe:
-Y: 0, Cb: 0, Cr: 0 repräsentiert die Farbe Schwarz.
+	Y: 0, Cb: 0, Cr: 0 entspricht der Farbe:
+	Y: 0, Cb: 0, Cr: 0 repräsentiert die Farbe Schwarz.
 
-Y: 0, Cb: 1, Cr: 0 entspricht der Farbe:
-Y: 0, Cb: 1, Cr: 0 repräsentiert die Farbe Blau.
+	Y: 0, Cb: 1, Cr: 0 entspricht der Farbe:
+	Y: 0, Cb: 1, Cr: 0 repräsentiert die Farbe Blau.
 
-Y: 0, Cb: -1, Cr: 0 entspricht der Farbe:
-Y: 0, Cb: -1, Cr: 0 repräsentiert die Farbe Gelb.
+	Y: 0, Cb: -1, Cr: 0 entspricht der Farbe:
+	Y: 0, Cb: -1, Cr: 0 repräsentiert die Farbe Gelb.
 
-Y: 0, Cb: 0, Cr: 1 entspricht der Farbe:
-Y: 0, Cb: 0, Cr: 1 repräsentiert die Farbe Rot.
+	Y: 0, Cb: 0, Cr: 1 entspricht der Farbe:
+	Y: 0, Cb: 0, Cr: 1 repräsentiert die Farbe Rot.
 
-Y: 0, Cb: 0, Cr: -1 entspricht der Farbe:
-Y: 0, Cb: 0, Cr: -1 repräsentiert die Farbe Cyan.
+	Y: 0, Cb: 0, Cr: -1 entspricht der Farbe:
+	Y: 0, Cb: 0, Cr: -1 repräsentiert die Farbe Cyan.
 
-Y: 0.3, Cb: 0.5, Cr: -0.17 entspricht der Farbe:
-Die Darstellung dieser spezifischen Kombination von Y, Cb und Cr hängt von der genauen Umwandlungsfunktion ab, die verwendet wird. Ohne weitere Informationen ist es schwierig, die genaue Farbe zu bestimmen. Es ist jedoch wahrscheinlich eine Farbe zwischen den Primärfarben (Rot, Grün, Blau) mit einem gewissen Grad an Helligkeit, Chrominanz und Farbunterschied.
+	Y: 0.3, Cb: 0.5, Cr: -0.17 entspricht der Farbe:
+	eine Farbe zwischen den Primärfarben (Rot, Grün, Blau) mit einem gewissen Grad an Helligkeit, Chrominanz und Farbunterschied.
 
 ## Tag-4
 
 ### 2. Farbcodierung RGB / CMYK
 
-C: 0%, M: 100%, Y: 100%, K: 0% entspricht der Farbe:
-Die Farbe ist ein leuchtendes Gelb.
+	C: 0%, M: 100%, Y: 100%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein leuchtendes Gelb.
 
-C: 100%, M: 0%, Y: 100%, K: 0% entspricht der Farbe:
-Die Farbe ist ein kräftiges Cyan.
+	C: 100%, M: 0%, Y: 100%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein kräftiges Cyan.
 
-C: 100%, M: 100%, Y: 0%, K: 0% entspricht der Farbe:
-Die Farbe ist ein leuchtendes Magenta.
+	C: 100%, M: 100%, Y: 0%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein leuchtendes Magenta.
 
-C: 0%, M: 0%, Y: 100%, K: 0% entspricht der Farbe:
-Die Farbe ist ein reines Blau.
+	C: 0%, M: 0%, Y: 100%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein reines Blau.
 
-C: 100%, M: 0%, Y: 0%, K: 0% entspricht der Farbe:
-Die Farbe ist ein sattes Rot.
+	C: 100%, M: 0%, Y: 0%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein sattes Rot.
 
-C: 0%, M: 100%, Y: 0%, K: 0% entspricht der Farbe:
-Die Farbe ist ein leuchtendes Grün.
+	C: 0%, M: 100%, Y: 0%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein leuchtendes Grün.
 
-C: 100%, M: 100%, Y: 100%, K: 0% entspricht der Farbe:
-Die Farbe ist ein helles Grau.
+	C: 100%, M: 100%, Y: 100%, K: 0% entspricht der Farbe:
+	Die Farbe ist ein helles Grau.
 
-C: 0%, M: 0%, Y: 0%, K: 100% entspricht der Farbe:
-Die Farbe ist Schwarz.
+	C: 0%, M: 0%, Y: 0%, K: 100% entspricht der Farbe:
+	Die Farbe ist Schwarz.
 
-C: 0%, M: 0%, Y: 0%, K: 0% entspricht der Farbe:
-Die Farbe ist Weiß.
+	C: 0%, M: 0%, Y: 0%, K: 0% entspricht der Farbe:
+	Die Farbe ist Weiß.
 
-C: 0%, M: 46%, Y: 38%, K: 22% entspricht der Farbe:
-einen dunklen Braunton.
+	C: 0%, M: 46%, Y: 38%, K: 22% entspricht der Farbe:
+	einen dunklen Braunton.
 
 ### 3. Alphakanal - Ein zusätzlicher Kanal zur Bildmaskierung
+
+

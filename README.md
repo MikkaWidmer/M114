@@ -180,3 +180,67 @@ DPI (Dots per Inch) und PPI (Pixels per Inch) sind Begriffe, die wichtig sind, u
 ### 3. Alphakanal - Ein zusätzlicher Kanal zur Bildmaskierung
 
 
+
+### Prüfung geschrieben
+
+# Tag 5
+
+### Huffmann 2er arbeit:
+
+	FUSSBALLTORWART
+	
+	F (1)
+	U (1)
+	S (2)
+	B (1)
+	A (2)
+	L (2)
+	T (2)
+	O (1)
+	R (2)
+	W (1)
+	
+![grafik](https://github.com/MikkaWidmer/M114/assets/84330170/059e6de4-74d4-4b95-8fb3-fd9f784a84c9)
+![grafik](https://github.com/MikkaWidmer/M114/assets/84330170/0abbd9eb-8de2-43d2-8650-5982c7e3f0ff)
+
+	
+
+### RLC/E-Verfahren: 
+Sie erhalten diesen RL-Code:
+010100011110010010010010010010010010010110010110010010010010010010010010001
+
+	010 --> 2
+	100 --> 4
+	011 --> 3
+	110 --> 6
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	110 --> 6
+	010 --> 2
+	110 --> 6
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	010 --> 2
+	001 --> 1
+	
+	XXOOOOXX
+	XOOOOOOX
+	XOOXXOOX
+	XOOXXOOX
+	XOOOOOOX
+	XOOXXOOX
+	XOOXXOOX
+	
+	

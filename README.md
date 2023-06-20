@@ -249,7 +249,15 @@ Sie erhalten diesen RL-Code:
 	
 # Tag 6
 ## B2.1. Bildauflösung, Bildwiederholungen oder Abtastung reduzieren
-habe ich gelernt, dass die Reduzierung der Bildgröße um die Hälfte zu einer viermal kleineren Datei führt. Die Verringerung der Farbauflösung auf 4 Bit halbiert die Dateigröße. Eine Halbierung der Bildwiederholrate spart 50% der Dateigröße ein. Die Reduzierung der Samplingrate von 44,1 kHz auf 8 kHz führt zu einer fünffach kleineren Datei, und die Verringerung der Amplitudenauflösung von 16 Bit auf 8 Bit halbiert die Dateigröße erneut. Diese Erkenntnisse sind in vielen Anwendungen hilfreich, um Speicherplatz zu sparen und Übertragungsgeschwindigkeiten zu verbessern, ohne signifikante Qualitätsverluste in Kauf nehmen zu müssen.
+Heute habe ich gelernt:
+
+    Bildgrößenreduktion um die Hälfte -> viermal kleinere Datei
+    Reduzierung der Farbauflösung auf 4 Bit -> Halbierung der Dateigröße
+    Halbierung der Bildwiederholrate -> 50% Einsparung der Dateigröße
+    Samplingrate-Reduktion von 44,1 kHz auf 8 kHz -> fünffach kleinere Datei
+    Reduzierung der Amplitudenauflösung von 16 Bit auf 8 Bit -> Halbierung der Dateigröße
+
+Diese Erkenntnisse sind in vielen Anwendungen nützlich, um Speicherplatz zu sparen und Übertragungsgeschwindigkeiten zu verbessern, ohne dabei signifikante Qualitätsverluste in Kauf nehmen zu müssen.
 
 ## B2.2. Eine Farbtabelle benutzen
 habe ich gelernt, dass anstelle der Beschreibung jedes einzelnen Pixels mit den drei Grundfarben RGB in 3x8Bit auch eine Farbtabelle verwendet werden kann. Dadurch kann Speicherplatz eingespart werden. Mit Dithering können benachbarte Pixel mit unterschiedlichen Farbinformationen versehen werden, um aus der Distanz eine imaginäre Drittfarbe zu erzeugen. Ein Beispiel dafür ist ein GIF mit 8 Bit Farbauflösung, was 256 Farben ergibt.

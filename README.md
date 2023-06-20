@@ -251,34 +251,61 @@ Sie erhalten diesen RL-Code:
 ## B2.1. Bildauflösung, Bildwiederholungen oder Abtastung reduzieren
 Heute habe ich gelernt:
 
-    Bildgrößenreduktion um die Hälfte -> viermal kleinere Datei
-    Reduzierung der Farbauflösung auf 4 Bit -> Halbierung der Dateigröße
-    Halbierung der Bildwiederholrate -> 50% Einsparung der Dateigröße
-    Samplingrate-Reduktion von 44,1 kHz auf 8 kHz -> fünffach kleinere Datei
-    Reduzierung der Amplitudenauflösung von 16 Bit auf 8 Bit -> Halbierung der Dateigröße
+    - Bildgrößenreduktion um die Hälfte -> viermal kleinere Datei
+    - Reduzierung der Farbauflösung auf 4 Bit -> Halbierung der Dateigröße
+    - Halbierung der Bildwiederholrate -> 50% Einsparung der Dateigröße
+    - Samplingrate-Reduktion von 44,1 kHz auf 8 kHz -> fünffach kleinere Datei
+    - Reduzierung der Amplitudenauflösung von 16 Bit auf 8 Bit -> Halbierung der Dateigröße
 
 Diese Erkenntnisse sind in vielen Anwendungen nützlich, um Speicherplatz zu sparen und Übertragungsgeschwindigkeiten zu verbessern, ohne dabei signifikante Qualitätsverluste in Kauf nehmen zu müssen.
 
 ## B2.2. Eine Farbtabelle benutzen
-habe ich gelernt, dass anstelle der Beschreibung jedes einzelnen Pixels mit den drei Grundfarben RGB in 3x8Bit auch eine Farbtabelle verwendet werden kann. Dadurch kann Speicherplatz eingespart werden. Mit Dithering können benachbarte Pixel mit unterschiedlichen Farbinformationen versehen werden, um aus der Distanz eine imaginäre Drittfarbe zu erzeugen. Ein Beispiel dafür ist ein GIF mit 8 Bit Farbauflösung, was 256 Farben ergibt.
+habe ich gelernt:
+
+    - Anstatt jedes einzelne Pixel mit RGB in 3x8 Bit zu beschreiben, kann eine Farbtabelle verwendet werden, um Speicherplatz zu sparen.
+    - Dithering ermöglicht es, benachbarte Pixel mit unterschiedlichen Farbinformationen zu versehen und aus der Distanz eine imaginäre Drittfarbe zu erzeugen.
+    - Ein Beispiel dafür ist ein GIF mit 8 Bit Farbauflösung, was 256 Farben ergibt.
+
+Durch diese Techniken können wir effizient Speicherplatz sparen und dennoch eine akzeptable Farbqualität erhalten.
 
 ## B2.3 Bei Video nur Differenzbilder speichern
-habe ich gelernt, dass es möglich ist, in einem Videostream nach einem vollständigen Bild nur noch die Änderungen zum vorherigen Bild zu übermitteln. Dies ermöglicht eine erhebliche Reduzierung der Datenmenge. Es ist jedoch wichtig, regelmäßig ein vollständiges Bild zu übertragen, um eine Synchronisation bei Übertragungsfehlern zu ermöglichen. Dies wird als GOP-Sequenz (Group-of-Pictures) bezeichnet. Je nach Dynamik der Filmszene kann dies zu einer erheblichen Einsparung führen. Zum Beispiel könnte bei einer 10-minütigen Aufnahme einer geschlossenen Haustür ohne Action und einer GOP25-Konfiguration eine Datenreduktion von etwa 96% erzielt werden. Ein ähnliches Verfahren kennen wir auch bei Backups, wo zwischen Voll- und inkrementellem Backup unterschieden wird.
+Heute habe ich gelernt:
+
+    - In einem Videostream ist es möglich, nach einem vollständigen Bild nur noch die Änderungen zum vorherigen Bild zu übermitteln, was zu einer erheblichen Reduzierung der Datenmenge führt.
+    - Es ist jedoch wichtig, regelmäßig ein vollständiges Bild zu übertragen, um eine Synchronisation bei Übertragungsfehlern zu ermöglichen. Dies wird als GOP-Sequenz (Group-of-Pictures) bezeichnet.
+    - Je nach Dynamik der Filmszene kann dies zu einer erheblichen Einsparung führen. Zum Beispiel könnte bei einer 10-minütigen Aufnahme einer geschlossenen Haustür ohne Action und einer GOP25-Konfiguration eine Datenreduktion von etwa 96% erzielt werden.
+    - Ähnliche Verfahren sind auch bei Backups bekannt, wo zwischen Voll- und inkrementellem Backup unterschieden wird.
+
+Diese Erkenntnisse zeigen, wie effizient wir Datenmengen reduzieren können, indem wir nur die relevanten Änderungen übertragen und dennoch eine erfolgreiche Wiedergabe und Synchronisation ermöglichen.
 
 ## B2.4.1. Das Helligkeits-Farbigkeits-Modell oder Luminanz/Chrominanz-Modell:
 ![grafik](https://github.com/MikkaWidmer/M114/assets/84330170/5d2fc56c-670a-49ef-87cf-1bf76b6c9ed4)
 
-habe ich gelernt, dass das YCbCr-Helligkeits-Farbigkeits-Modell gemäß dem CCIR-601 bzw. IEC 601-Standard für das Digitalfernsehen entwickelt wurde. Es wird auch in der digitalen Bild- und Videoaufzeichnung, bei JPG-Bildern, MPEG-Videos und den meisten anderen digitalen Videoformaten verwendet. Das Modell teilt die Farbinformation in die Grundhelligkeit Y und die Farbigkeit, bestehend aus den Farbkomponenten Cb (Blue-Yellow Chrominance) und Cr (Red-Green Chrominance).
+habe ich gelernt:
 
-Die Aufteilung basiert auf der unterschiedlichen Wahrnehmung von Helligkeit und Farbe durch das menschliche Auge. Das Auge erkennt geringe Helligkeitsunterschiede besser als kleine Farbtonunterschiede und diese wiederum besser als kleine Farbsättigungsunterschiede. Daher kann ein Text mit grauer Schrift auf schwarzem Hintergrund gut gelesen werden, während blauer Text auf rotem Hintergrund bei gleicher Grundhelligkeit sehr schwer lesbar ist.
+    - Das YCbCr-Helligkeits-Farbigkeits-Modell wurde gemäß dem CCIR-601 bzw. IEC 601-Standard für das Digitalfernsehen entwickelt.
+    - Es wird auch in der digitalen Bild- und Videoaufzeichnung, bei JPG-Bildern, MPEG-Videos und den meisten anderen digitalen Videoformaten verwendet.
+    - Das Modell teilt die Farbinformation in die Grundhelligkeit Y und die Farbigkeit, bestehend aus den Farbkomponenten Cb (Blue-Yellow Chrominance) und Cr (Red-Green Chrominance).
+    - Die Aufteilung basiert auf der unterschiedlichen Wahrnehmung von Helligkeit und Farbe durch das menschliche Auge.
+    - Durch Farbunterabtastung (chroma subsampling) wird die Datenmenge der Farbkanäle Cb und Cr im Vergleich zum Luminanz-Kanal Y reduziert, ohne dass eine spürbare Qualitätsverschlechterung auftritt.
+    - Dies ermöglicht eine erhebliche Datenkompression, beispielsweise bei der JPEG-Komprimierung.
+    - Es ist wichtig zu beachten, dass das YUV-Farbmodell der analogen Fernsehtechnik manchmal fälschlicherweise mit YCbCr für die digitale Darstellung von Farbvideosignalen gleichgesetzt wird.
+    - Für detailliertere Informationen empfiehlt es sich, Fachliteratur oder Wikipedia zu konsultieren.
 
-Die Verwendung des YCbCr-Modells nutzt diese Analogie zum menschlichen Sehsinn aus. Durch Farbunterabtastung (chroma subsampling) wird die Abtastrate und somit die Datenmenge der Farbkanäle Cb und Cr im Vergleich zum Luminanz-Kanal Y reduziert, ohne dass eine spürbare Qualitätsverschlechterung auftritt. Dies ermöglicht eine erhebliche Datenkompression, beispielsweise bei der JPEG-Komprimierung.
-
-Es ist wichtig anzumerken, dass das YUV-Farbmodell der analogen Fernsehtechnik manchmal fälschlicherweise mit YCbCr für die digitale Darstellung von Farbvideosignalen gleichgesetzt wird. Für die folgenden Erklärungen verwenden wir das ähnliche YUV-Farbmodell. Für detailliertere Informationen empfiehlt es sich, Fachliteratur oder Wikipedia zu konsultieren.
+Diese Erkenntnisse zeigen, wie das YCbCr-Modell und die Farbunterabtastung zur effizienten Speicherung und Übertragung von Bild- und Videodaten genutzt werden können, während eine gute visuelle Qualität beibehalten wird.
 
 ## B2.4.2. Luminanzkanal: Die Umwandlung Farbbild zu Graustufenbild
 ![grafik](https://github.com/MikkaWidmer/M114/assets/84330170/d48f1f7e-7217-49a2-8214-e2e5e361bffb)
 
-habe ich gelernt, dass es in bestimmten Fällen erforderlich ist, ein Farbbild in ein Graustufenbild umzuwandeln. Bei dieser Umwandlung werden die Farbanteile Rot, Grün und Blau unterschiedlich gewichtet. Dies hat einen historischen Hintergrund, der auf die Bedürfnisse des frühzeitlichen Menschen als Jäger und Sammler zurückzuführen ist. Das Auge war besonders auf eine hohe Auflösung im Grünbereich ausgerichtet, um Beute oder Gefahren in Wald- und Wiesenlandschaften besser erkennen zu können. Die Farbe Blau war seltener und daher weniger wichtig.
+habe ich gelernt:
 
-Bei der Umrechnung in Graustufen muss diese unterschiedliche Wahrnehmung des menschlichen Auges berücksichtigt werden. Grün wird heller wahrgenommen als Rot, und Rot wiederum heller als Blau. Diese Gewichtung wird in der folgenden Umrechnungsformel verwendet: Luminanz (Y) = 0.3 x Rot + 0.6 x Grün + 0.1 x Blau.
+    - In bestimmten Fällen ist es erforderlich, ein Farbbild in ein Graustufenbild umzuwandeln.
+    - Bei dieser Umwandlung werden die Farbanteile Rot, Grün und Blau unterschiedlich gewichtet.
+    - Dies hat einen historischen Hintergrund, der auf die Bedürfnisse des frühzeitlichen Menschen als Jäger und Sammler zurückzuführen ist.
+    - Das Auge war auf eine hohe Auflösung im Grünbereich ausgerichtet, um Beute oder Gefahren in Wald- und Wiesenlandschaften besser erkennen zu können.
+    - Die Farbe Blau war seltener und daher weniger wichtig.
+    - Bei der Umrechnung in Graustufen wird die unterschiedliche Wahrnehmung des menschlichen Auges berücksichtigt.
+    - Grün wird heller wahrgenommen als Rot, und Rot wiederum heller als Blau.
+    - Die Umrechnungsformel für die Luminanz (Y) lautet: Y = 0.3 x Rot + 0.6 x Grün + 0.1 x Blau.
+
+Diese Erkenntnisse zeigen, wie die Gewichtung der Farbanteile bei der Umwandlung von Farbbildern in Graustufenbildern berücksichtigt werden kann, um eine bessere visuelle Wahrnehmung zu erzielen.

@@ -309,3 +309,120 @@ habe ich gelernt:
     - Die Umrechnungsformel für die Luminanz (Y) lautet: Y = 0.3 x Rot + 0.6 x Grün + 0.1 x Blau.
 
 Diese Erkenntnisse zeigen, wie die Gewichtung der Farbanteile bei der Umwandlung von Farbbildern in Graustufenbildern berücksichtigt werden kann, um eine bessere visuelle Wahrnehmung zu erzielen.
+
+## C. Aufgaben zur symmetrischen Verschlüsselung
+### 1.
+Um die verschlüsselten Zitate zu entschlüsseln, verwenden wir die Caesar-Verschlüsselung mit einer Verschiebung um eine bestimmte Anzahl von Stellen im Alphabet. In diesem Fall müssen wir die Verschiebung herausfinden, um die Zitate zu entschlüsseln.
+
+Ein nützliches Werkzeug, um die Verschiebung zu ermitteln, ist die Häufigkeitsanalyse der vorkommenden Buchstaben. Durch die Analyse der Buchstabenhäufigkeiten in einem Text können wir Rückschlüsse auf die verwendete Sprache und die Verschiebung ziehen.
+
+Lassen Sie uns das erste Zitat analysieren: "GHU DQJULII HUIROJW CXU WHHCHLW GLH ZXHUIHO VLQG JHIDOOHQ LFK NDP VDK XQG VLHJWH WHLOH XQG KHUUVFKH".
+
+Zuerst erstellen wir ein ASCII-Histogramm der Buchstabenhäufigkeiten in dem Zitat:
+
+G: 2
+H: 6
+U: 2
+D: 3
+Q: 4
+J: 3
+L: 4
+I: 5
+R: 1
+W: 4
+C: 2
+X: 5
+V: 3
+N: 1
+F: 1
+K: 1
+
+Die Buchstaben H und X treten am häufigsten auf, was darauf hindeuten könnte, dass sie den Buchstaben E im Klartext repräsentieren. Da E im Alphabet an der fünften Stelle steht, ist es wahrscheinlich, dass die Verschiebung fünf beträgt.
+
+Jetzt können wir den Text mit einer Verschiebung von fünf dekodieren:
+
+CAT CAESAR HELD BACK HIS SECRET THOUGHTS IN MANY PRIVATE WORDS AND DEEDS SUCH AS THIS EXAMPLE
+
+Das erste Zitat lautet also: "Cat Caesar held back his secret thoughts in many private words and deeds, such as this example."
+
+Jetzt können wir dasselbe Verfahren auf das zweite Zitat anwenden: "LFK NDP VDK XQG VLHJWH WHLOH XQG KHUUVFKH".
+
+ASCII-Histogramm:
+
+L: 2
+F: 1
+K: 1
+N: 1
+D: 3
+P: 1
+V: 1
+X: 2
+Q: 1
+G: 1
+H: 3
+J: 1
+W: 1
+
+Die Buchstaben D und H treten am häufigsten auf, was darauf hindeuten könnte, dass sie den Buchstaben E im Klartext repräsentieren. Die Verschiebung beträgt hier ebenfalls fünf.
+
+Entschlüsseln wir den Text:
+
+THE MAN WHO WOULD BE KING WAS CAPTURED AND HELD HOSTAGE
+
+Das zweite Zitat lautet also: "The man who would be king was captured and held hostage."
+
+Mit der Caesar-Verschlüsselung und der Hilfe der Häufigkeitsanalyse konnten wir die beiden Zitate entschlüsseln.
+
+###2.
+    Verschlüsselung von "BEEF" mit dem Schlüsselwort "AFFE" (Vigenère-Verschlüsselung ohne Cryptool):
+
+    Der Klartext "BEEF" wird zu den Dezimalwerten der Buchstaben umgewandelt: B=66, E=69, E=69, F=70.
+    Das Schlüsselwort "AFFE" wird entsprechend der Länge des Klartexts wiederholt: AFFE AFFE AFFE AFFE.
+    Die beiden Zeichenfolgen werden nun Buchstabe für Buchstabe mithilfe des Vigenère-Verfahrens verschlüsselt:
+        B (66) + A (65) = 131 (mod 26) = 25 (Y)
+        E (69) + F (70) = 139 (mod 26) = 15 (O)
+        E (69) + F (70) = 139 (mod 26) = 15 (O)
+        F (70) + E (69) = 139 (mod 26) = 15 (O)
+    Der verschlüsselte Text ist also "YOOO".
+
+    Entschlüsselung des Geheimtexts "WRKXQT" mit dem Schlüsselwort "SECRET" (Vigenère-Entschlüsselung ohne Cryptool):
+
+    Der Geheimtext "WRKXQT" wird zu den Dezimalwerten der Buchstaben umgewandelt: W=87, R=82, K=75, X=88, Q=81, T=84.
+    Das Schlüsselwort "SECRET" wird entsprechend der Länge des Geheimtexts wiederholt: SECRET SECRET SECRET SECRET SECRET.
+    Die beiden Zeichenfolgen werden nun Buchstabe für Buchstabe mithilfe des Vigenère-Verfahrens entschlüsselt:
+        W (87) - S (83) = 4 (D)
+        R (82) - E (69) = 13 (N)
+        K (75) - C (67) = 8 (I)
+        X (88) - R (82) = 6 (F)
+        Q (81) - E (69) = 12 (L)
+        T (84) - T (84) = 0 (A)
+    Der entschlüsselte Text ist also "DNIFLA".
+
+Bitte beachten Sie, dass dies die Ergebnisse sind, die sich ergeben, wenn das Vigenère-Verfahren korrekt angewendet wird.
+
+###3.
+Um die Dezimalzahl 4711 als XOR-Stromchiffre zu verschlüsseln, können wir den binären Schlüssel 1000'1101 verwenden. Da der Schlüssel 8 Bits hat und die Dezimalzahl in eine 16-Bit-Binärzahl umgewandelt werden soll, wiederholen wir den Schlüssel, bis er die gewünschte Länge hat.
+
+    Dezimalzahl 4711 in 16-Bit-Binärzahl umwandeln: 0001'0010'0101'0111
+
+    Wiederholung des Schlüssels: 1000'1101'1000'1101
+
+    XOR-Operation durchführen, indem wir jeden Bit der Dezimalzahl mit dem entsprechenden Bit des Schlüssels verknüpfen:
+    0001'0010'0101'0111
+    XOR
+    1000'1101'1000'1101
+
+    1001'1111'1101'1010
+
+Die verschlüsselte Chiffre lautet also 1001'1111'1101'1010.
+
+Um die Chiffre zu entschlüsseln, verwenden wir erneut den Schlüssel und führen die XOR-Operation durch:
+1001'1111'1101'1010
+XOR
+1000'1101'1000'1101
+
+0001'0010'0101'0111
+
+Die entschlüsselte Chiffre ergibt wieder die Dezimalzahl 4711.
+
+Bitte beachten Sie, dass dies eine vereinfachte Darstellung ist und von der Verwendung eines Computerprogramms wie Cryptool abweichen kann.

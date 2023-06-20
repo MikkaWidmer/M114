@@ -206,7 +206,7 @@ DPI (Dots per Inch) und PPI (Pixels per Inch) sind Begriffe, die wichtig sind, u
 	
 ![Unbenanntes Diagramm drawio](https://github.com/MikkaWidmer/M114/assets/84330170/46ac5a5c-8ca8-448b-a292-52284bd3f029)
 
-![Unbenanntes Diagramm drawio-1](https://github.com/MikkaWidmer/M114/assets/84330170/68d7b93d-e277-4a67-bfbd-968f384a3ca4)
+![grafik](https://github.com/MikkaWidmer/M114/assets/84330170/9d29e276-3c01-46bf-9b29-e25f7b6195fd)
 
 
 ### RLC/E-Verfahren: 

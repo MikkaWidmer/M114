@@ -12,6 +12,8 @@
 
 [Tag 6](#Tag-6)
 
+[Tag 7](#Tag-7)
+
 ----------------
 
 ## Tag-1
@@ -426,3 +428,5 @@ XOR
 Die entschlüsselte Chiffre ergibt wieder die Dezimalzahl 4711.
 
 Bitte beachten Sie, dass dies eine vereinfachte Darstellung ist und von der Verwendung eines Computerprogramms wie Cryptool abweichen kann.
+
+# Tag 7
